@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Gallery</title>
+    <link rel="stylesheet" href="movies.css">
+    <script src="movies.js"></script>
+        
+        <!-- fav icon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="netflix_favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="netflix_favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="netflix_favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="netflix_favicon_io/site.webmanifest">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav_left">
+            <a href="index.html">
+                <img class="nav_logo" src="netflix-img/movies/Netflix_logo.png"></a>
+        </div>
+        <div class="nav_right">
+            <img src="netflix-img/movies/profile.jpg" class="profile" alt="">
+        </div>
+        </div>
+    </div>
+
+    <!--banner-->
+    <header id="banner">
+        <div id="banner_content">
+            <h1 id="banner__title"></h1>
+            <div id="banner_bottons">
+                <button id="banner_button">PLAY</button>
+                <button id="banner_button">My List  +</button>
+            </div>
+        
+        <p id="banner__description"></p>
+        </div>
+        <div id="banner_fadeBottom"></div>
+    </header>
+
+    <!--row-->
+    <div id="headrow">
+        <div class="row">
+            <h2 class="row_title"></h2>
+            <div class="row_posters"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <script>
+        window.addEventListener("scroll", function(){
+
+            var nav = document.querySelector(".nav");
+            nav.classList.toggle("active", window.scrollY > 0);
+        })
+    </script>
+</body>
+</html>
